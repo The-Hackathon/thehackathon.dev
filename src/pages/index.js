@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import { SEO } from "../Seo"
 import { Logo } from "../components/Logo"
@@ -61,40 +62,131 @@ const Right = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="The Hackathon" />
-    <GlobalStyle />
-    <Left>
-      <Content>
-        <h2>Purpose</h2>
-        <p>Our purpose, is to serve the community.</p>
-        <h2>Rules</h2>
-        <p>
-          Do you see any Teletubbies in here? Do you see a slender plastic tag
-          clipped to my shirt with my name printed on it? Do you see a little
-          Asian child with a blank expression on his face sitting outside on a
-          mechanical helicopter that shakes when you put quarters in it? No?
-          Well, that's what you see at a toy store. And you must think you're in
-          a toy store, because you're here shopping for an infant named Jeb.{" "}
-        </p>
-        <p>
-          Follow us on{" "}
-          <Link to="https://twitter.com/the_hackathon">Twitter</Link> for more
-          information.
-        </p>
-      </Content>
-    </Left>
-    <Right>
-      <Content>
-        <Logo />
-        <p>
-          The Super Grand National World Hacker Bowl Cup Games causally known as
-        </p>
-        <h1>The Hackathon</h1>
-      </Content>
-    </Right>
-  </Layout>
-)
+const TeamMember = styled(Link)`
+  display: grid;
+  grid-row-gap: 0.25rem;
+  justify-content: center;
 
-export default IndexPage
+  span {
+    text-align: center;
+  }
+`
+
+const Team = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-column-gap: 1rem;
+`
+
+export default ({ data }) => {
+  console.log(data)
+  return (
+    <Layout>
+      <SEO title="The Hackathon" />
+      <GlobalStyle />
+      <Left>
+        <Content>
+          <h2>Purpose</h2>
+          <p>
+            Our main goal is to get "hackers" together to learn, meet
+            interesting people and, above all, help charitable institutions.
+            We're not looking to have any monetary prize for the winners other
+            than being given the winners title and being hailed as so on the
+            website. However, we also wanted to give something back to them.
+            We're not willing to allow large sponsors, with potentially ulterior
+            motives, to help us fund this. Any potential monetary sponsor we
+            have (we're not sold on the idea) would be encouraged to donate to
+            an institution as sponsorship instead.
+          </p>
+          <p>
+            So we’re reaching out to some potential partners about a prize. Our
+            idea was to build a “hacker kit” with resources to learn and help
+            them in the future. Would you be willing to provide one of the
+            seasons of Destroy All Software for the winning team or individual?
+            We would include DAS on the website as one of the sponsors, of
+            course.
+          </p>
+          <h2>Rules</h2>
+          <p>
+            Follow us on{" "}
+            <Link to="https://twitter.com/the_hackathon">Twitter</Link> for more
+            information.
+          </p>
+          <h2>Brought to you by</h2>
+          <Team>
+            <TeamMember to="#">
+              <Img fixed={data.davide.childImageSharp.fixed} />
+              <span>Davide</span>
+            </TeamMember>
+            <TeamMember to="#">
+              <Img fixed={data.gabriel.childImageSharp.fixed} />
+              <span>Gabriel</span>
+            </TeamMember>
+            <TeamMember to="#">
+              <Img fixed={data.mendes.childImageSharp.fixed} />
+              <span>Mendes</span>
+            </TeamMember>
+            <TeamMember to="#">
+              <Img fixed={data.naps.childImageSharp.fixed} />
+              <span>Naps</span>
+            </TeamMember>
+            <TeamMember to="#">
+              <Img fixed={data.resende.childImageSharp.fixed} />
+              <span>Resende</span>
+            </TeamMember>
+          </Team>
+        </Content>
+      </Left>
+      <Right>
+        <Content>
+          <Logo />
+          <p>
+            The Super Grand National World Hacker Bowl Cup Games causally known
+            as
+          </p>
+          <h1>The Hackathon</h1>
+        </Content>
+      </Right>
+    </Layout>
+  )
+}
+
+export const query = graphql`
+  query {
+    mendes: file(relativePath: { eq: "mendes.jpg" }) {
+      childImageSharp {
+        fixed(width: 80, height: 80) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
+    naps: file(relativePath: { eq: "naps.jpg" }) {
+      childImageSharp {
+        fixed(width: 80, height: 80) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
+    resende: file(relativePath: { eq: "resende.jpg" }) {
+      childImageSharp {
+        fixed(width: 80, height: 80) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
+    davide: file(relativePath: { eq: "davide.jpg" }) {
+      childImageSharp {
+        fixed(width: 80, height: 80) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
+    gabriel: file(relativePath: { eq: "gabriel.jpg" }) {
+      childImageSharp {
+        fixed(width: 80, height: 80) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
+  }
+`
