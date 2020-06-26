@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
+import "../fonts.css"
+
 export const GlobalStyle = createGlobalStyle`
   html, body, #___gatsby, #gatsby-focus-wrapper  {
     color: #edbbb2;
@@ -7,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     font-size: 16px;
-    font-family: monospace;
+    font-family: 'JetBrains', sans-serif;
     line-height: 1.2rem;
     margin: 0;
     padding: 0;
@@ -39,6 +41,5 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1em;
     margin-top: 1em;
     margin-bottom: 0.3em;
-    font-family: inherit;
   }
 `

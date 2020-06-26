@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "JetBrains";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("./fonts/woff/JetBrainsMono-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/woff2/JetBrainsMono-Bold.woff2") format("woff2"), url("./fonts/woff/JetBrainsMono-Bold.woff") format("woff");
+  font-display: swap;
+}
