@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import { SEO } from "../Seo"
 import { Logo } from "../components/Logo"
-import { GlobalStyle } from "../components/GloabalStyle"
+import { GlobalStyle } from "../components/GlobalStyle"
 
 const Layout = styled.div`
   display: flex;
