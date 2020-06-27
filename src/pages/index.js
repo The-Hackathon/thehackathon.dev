@@ -23,12 +23,17 @@ const Layout = styled.div`
 
 const Content = styled.div`
   max-width: calc(8 * 70px);
+  width: 100%;
 `
 
 const Left = styled.div`
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: 800px) {
+    padding: 4rem;
+  }
 `
 
 const Right = styled.div`
@@ -38,7 +43,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem;
+  padding: 2rem;
   text-align: center;
 
   p {
@@ -55,6 +60,7 @@ const Right = styled.div`
     top: 0;
     width: 50%;
     height: 100%;
+    padding: 4rem;
   }
 
   ${Content} {
@@ -74,8 +80,9 @@ const TeamMember = styled(Link)`
 
 const Team = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 80px);
+  grid-template-columns: repeat(auto-fit, 80px);
   grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 `
 
 export default ({ data }) => {

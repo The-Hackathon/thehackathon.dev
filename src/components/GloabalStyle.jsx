@@ -40,6 +40,6 @@ export const GlobalStyle = createGlobalStyle`
   h1,h2,h3 {
     line-height: 1em;
     margin-top: 1em;
-    margin-bottom: 0.3em;
+    margin-bottom: 1rem;
   }
 `
