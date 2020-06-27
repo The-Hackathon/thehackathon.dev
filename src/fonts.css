@@ -13,3 +13,19 @@
   src: url("./fonts/woff2/JetBrainsMono-Bold.woff2") format("woff2"), url("./fonts/woff/JetBrainsMono-Bold.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Lato/Lato-Bold.ttf") format("ttf");
+  font-display: swap;
+}

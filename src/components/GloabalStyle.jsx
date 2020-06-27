@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     font-size: 16px;
-    font-family: 'JetBrains', sans-serif;
-    line-height: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2em;
     margin: 0;
     padding: 0;
   }
@@ -41,5 +41,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1em;
     margin-top: 1em;
     margin-bottom: 1rem;
+    font-family: 'JetBrains', serif;
+    font-weight: bold;
   }
 `
