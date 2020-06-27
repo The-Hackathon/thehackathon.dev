@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 import { SEO } from "../Seo"
-import { GlobalStyle } from "../components/GloabalStyle"
+import { GlobalStyle } from "../components/GlobalStyle"
 import { Header } from "../components/Header"
 
 const Layout = styled.div`
