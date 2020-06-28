@@ -29,3 +29,19 @@
   src: url("./fonts/Lato/Lato-Bold.ttf") format("ttf");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Merriweather/Merriweather-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Merriweather/Merriweather-Bold.ttf") format("ttf");
+  font-display: swap;
+}
