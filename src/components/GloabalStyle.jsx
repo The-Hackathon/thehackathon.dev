@@ -44,4 +44,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Merriweather', serif;
     font-weight: bold;
   }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 `

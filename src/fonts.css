@@ -17,6 +17,14 @@
 @font-face {
   font-family: "Lato";
   font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/Lato/Lato-Italic.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
   font-style: normal;
   src: url("./fonts/Lato/Lato-Regular.ttf") format("ttf");
   font-display: swap;
@@ -27,6 +35,14 @@
   font-weight: 700;
   font-style: normal;
   src: url("./fonts/Lato/Lato-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/Merriweather/Merriweather-Italic.ttf") format("ttf");
   font-display: swap;
 }
 

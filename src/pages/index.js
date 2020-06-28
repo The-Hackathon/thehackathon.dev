@@ -43,30 +43,48 @@ export default ({ data }) => {
       <GlobalStyle />
       <Header />
       <Content>
-        <h2>Purpose</h2>
+        <h2>Win the crown!</h2>
         <p>
-          Our main goal is to get "hackers" together to learn, meet interesting
-          people and, above all, help charitable institutions. We're not looking
-          to have any monetary prize for the winners other than being given the
-          winners title and being hailed as so on the website. However, we also
-          wanted to give something back to them. We're not willing to allow
-          large sponsors, with potentially ulterior motives, to help us fund
-          this. Any potential monetary sponsor we have (we're not sold on the
-          idea) would be encouraged to donate to an institution as sponsorship
-          instead.
+          The The Super Grand National World Hacker Bowl Cup Games is a
+          Hackathon to win the right to wear the crown!
         </p>
         <p>
-          So we’re reaching out to some potential partners about a prize. Our
-          idea was to build a “hacker kit” with resources to learn and help them
-          in the future. Would you be willing to provide one of the seasons of
-          Destroy All Software for the winning team or individual? We would
-          include DAS on the website as one of the sponsors, of course.
+          But our real goal is to have fun and get together as a community. It’s
+          for the glory of winning, there is no major prize, no $50k cheque, no
+          incubation period for a startup or whatever. It’s all about people
+          getting together and building something special.
         </p>
-        <h2>Rules</h2>
         <p>
-          Follow us on{" "}
-          <Link to="https://twitter.com/the_hackathon">Twitter</Link> for more
-          information.
+          There is no particular theme, such as blockchain, decentralisation or
+          some technology. The funnier, more creative the project is, the higher
+          chance of winning.
+        </p>
+        <h2>The Rules</h2>
+        <ul>
+          <li>
+            to enter, participants must donate to a charitable instituition and
+            email us proof.
+          </li>
+          <li>
+            participants can go at it as a team, individually or join a pool of
+            other participants who also have no team, to get to know each other,
+            bounce ideas and take on a project together.
+          </li>
+        </ul>
+        <h2>The Prize</h2>
+        <p>If you win, you get two prizes:</p>
+        <ul>
+          <li>
+            The right to wear the crown! This means being featured on the
+            website until the next edition, where you'll get the chance to
+            defend your title!
+          </li>
+          <li>A Hacker Kit! We don't know yet what it is though.</li>
+        </ul>
+        <p>
+          Out communication platform will be{" "}
+          <Link to="https://twitter.com/the_hackathon">Twitter</Link>, so follow
+          us there to keep up with the event and participate!
         </p>
         <h2>Brought to you by</h2>
         <Team>

@@ -15,8 +15,8 @@ const diffDates = (date1, date2) => {
   return date2.getTime() - date1.getTime()
 }
 
-const LogoSVG = styled.svg`
-  margin-bottom: 2rem;
+const Root = styled.svg`
+  margin-bottom: 3rem;
 `
 
 export class Logo extends React.Component {
@@ -61,7 +61,7 @@ export class Logo extends React.Component {
 
   render() {
     return (
-      <LogoSVG width="160" height="160" viewBox="-180 -180 340 340">
+      <Root width="160" height="160" viewBox="-180 -180 340 340">
         {range(-10, 9).map(j =>
           range(-10, 9).map(i => (
             <rect
@@ -106,7 +106,7 @@ export class Logo extends React.Component {
           style={{ fill: "#1d2021" }}
           shapeRendering="crispEdges"
         />
-      </LogoSVG>
+      </Root>
     )
   }
 }
