@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
 @font-face {
   font-family: "JetBrains";
   font-weight: 400;
@@ -59,5 +61,68 @@
   font-weight: 700;
   font-style: normal;
   src: url("./fonts/Merriweather/Merriweather-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./fonts/Mohave/Mohave-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./fonts/Mohave/Mohave-LightItalic.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Mohave/Mohave-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/Mohave/Mohave-Italic.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./fonts/Mohave/Mohave-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./fonts/Mohave/Mohave-MediumItalic.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mohave";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Mohave/Mohave-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./fonts/Mohave/Mohave-BoldItalic.ttf") format("ttf");
   font-display: swap;
 }
