@@ -5,7 +5,9 @@ import Img from "gatsby-image"
 
 import { SEO } from "../Seo"
 import { Logo } from "../components/Logo"
-import { GlobalStyle } from "../components/GlobalStyle"
+import { Logo2 } from "../components/Logo2"
+import { Logo3 } from "../components/Logo3"
+import { GlobalStyle } from "../components/GloabalStyle"
 
 const Layout = styled.div`
   display: flex;
@@ -147,6 +149,10 @@ export default ({ data }) => {
       <Right>
         <Content>
           <Logo />
+          <br />
+          <Logo2 />
+          <br />
+          <Logo3 />
           <p>
             The Super Grand National World Hacker Bowl Cup Games causally known
             as
