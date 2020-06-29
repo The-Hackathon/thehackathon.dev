@@ -1,24 +1,8 @@
 @font-face {
-  font-family: "JetBrains";
-  font-weight: 400;
-  font-style: normal;
-  src: url("./fonts/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("./fonts/woff/JetBrainsMono-Regular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "JetBrains";
-  font-weight: 700;
-  font-style: normal;
-  src: url("./fonts/woff2/JetBrainsMono-Bold.woff2") format("woff2"), url("./fonts/woff/JetBrainsMono-Bold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Lato";
   font-weight: 400;
   font-style: italic;
-  src: url("./fonts/Lato/Lato-Italic.ttf") format("ttf");
+  src: url("./fonts/Lato/Lato-Italic.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -26,7 +10,7 @@
   font-family: "Lato";
   font-weight: 400;
   font-style: normal;
-  src: url("./fonts/Lato/Lato-Regular.ttf") format("ttf");
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -34,7 +18,7 @@
   font-family: "Lato";
   font-weight: 700;
   font-style: normal;
-  src: url("./fonts/Lato/Lato-Bold.ttf") format("ttf");
+  src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -42,7 +26,7 @@
   font-family: "Merriweather";
   font-weight: 400;
   font-style: italic;
-  src: url("./fonts/Merriweather/Merriweather-Italic.ttf") format("ttf");
+  src: url("./fonts/Merriweather/Merriweather-Italic.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -50,7 +34,7 @@
   font-family: "Merriweather";
   font-weight: 400;
   font-style: normal;
-  src: url("./fonts/Merriweather/Merriweather-Regular.ttf") format("ttf");
+  src: url("./fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -58,6 +42,30 @@
   font-family: "Merriweather";
   font-weight: 700;
   font-style: normal;
-  src: url("./fonts/Merriweather/Merriweather-Bold.ttf") format("ttf");
+  src: url("./fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Mohave/Mohave-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/Mohave/Mohave-Italic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mohave";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Mohave/Mohave-Bold.ttf") format("truetype");
   font-display: swap;
 }

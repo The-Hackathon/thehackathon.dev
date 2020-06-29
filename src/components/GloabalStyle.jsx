@@ -6,10 +6,10 @@ export const GlobalStyle = createGlobalStyle`
   html, body, #___gatsby, #gatsby-focus-wrapper  {
     background: white;
     color: #333;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     font-size: 16px;
     height: 100%;
-    line-height: 1.2em;
+    line-height: 1.6em;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -41,7 +41,8 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1em;
     margin-top: 1em;
     margin-bottom: 1rem;
-    font-family: 'Merriweather', serif;
+    font-family: 'Mohave', sans-serif;
+    text-transform: uppercase;
     font-weight: bold;
   }
 

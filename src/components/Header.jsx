@@ -5,7 +5,6 @@ import { Logo } from ".//Logo"
 
 const Lead = styled.p`
   margin-bottom: 1rem;
-  font-family: "Merriweather", serif;
 `
 
 const Root = styled.div`
@@ -21,6 +20,7 @@ const Root = styled.div`
 
   h1 {
     margin-top: 0;
+    font-size: 8rem;
   }
 
   @media (max-width: 600px) {
@@ -35,7 +35,9 @@ export const Header = () => {
     <Root>
       <Logo />
       <Lead>
-        The Super Grand National World Hacker Bowl Cup Games causally known as
+        The Super Grand National World Hacker Bowl Cup Games
+        <br />
+        <span>casually known as</span>
       </Lead>
       <h1>The Hackathon</h1>
       <p>

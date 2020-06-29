@@ -43,7 +43,7 @@ export default ({ data }) => {
       <GlobalStyle />
       <Header />
       <Content>
-        <h2>Win the crown!</h2>
+        <h2>Win the crown</h2>
         <p>
           The The Super Grand National World Hacker Bowl Cup Games is a
           Hackathon to win the right to wear the crown!
