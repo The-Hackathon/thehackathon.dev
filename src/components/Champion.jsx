@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Ribbon } from "./Ribbon"
 import { Confetti } from "./Confetti"
 
-//import naps from "../images/naps.jpg"
+import unicorn from "../images/unicorn.png"
 
 const Picture = styled.div`
   align-items: center;
@@ -60,7 +60,9 @@ export const Champion = () => {
   return (
     <ChampionRoot>
       <Confetti />
-      <Picture>{/*<img src={naps} />*/}</Picture>
+      <Picture>
+        <img src={unicorn} alt="Photo of a stuffed unicorn" />
+      </Picture>
       <Ribbon />
     </ChampionRoot>
   )
