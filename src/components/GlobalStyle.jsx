@@ -44,6 +44,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Mohave', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: -1px;
   }
 
   li {
