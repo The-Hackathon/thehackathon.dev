@@ -91,19 +91,21 @@ export default () => {
           </p>
           <ul>
             <li>
-              <Link to="#">Davide "The Linter" Silva</Link>
+              <Link to="https://twitter.com/DavideSilva_">
+                Davide "The Linter" Silva
+              </Link>
             </li>
             <li>
-              <Link to="#">Gabriel</Link>
+              <Link to="https://twitter.com/gabrielgpoca">Gabriel</Link>
             </li>
             <li>
-              <Link to="#">Mendes</Link>
+              <Link to="https://twitter.com/justmnds">Mendes</Link>
             </li>
             <li>
-              <Link to="#">Naps</Link>
+              <Link to="https://twitter.com/naps62">Naps</Link>
             </li>
             <li>
-              <Link to="#">Resende</Link>
+              <Link to="https://twitter.com/Resende_666">Resende</Link>
             </li>
           </ul>
         </div>
