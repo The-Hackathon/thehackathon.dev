@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Merriweather', sans-serif;
     font-size: 16px;
     height: 100%;
-    line-height: 1.6em;
+    line-height: 1.5em;
     margin: 0;
     padding: 0;
     width: 100%;
