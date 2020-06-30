@@ -46,6 +46,7 @@ const GlitchedText = styled.h1`
       position: relative;
       margin-top: 0;
       font-size: 8rem;
+      padding: 0 1rem;
 
       animation: ${() =>
         generateGlitchSkew()} 1s infinite linear alternate-reverse;

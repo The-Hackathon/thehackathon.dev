@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 import { GlitchText } from "./GlitchText"
-import { Champion } from "../components/Champion"
+import { Champion } from "./Champion"
 
 const Lead = styled.p`
   margin-bottom: 1rem;
+  padding: 0 1rem;
 `
 
 const Root = styled.div`
@@ -18,12 +19,31 @@ const Root = styled.div`
   width: 100%;
   grid-row-gap: 8rem;
   grid-template-columns: 1fr;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    grid-row-gap: 4rem;
+  }
+`
+
+const Date = styled.div`
+  padding: 0 1rem;
+  font-style: italic;
+`
+
+const Logo = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 export const Header = () => {
   return (
     <Root>
-      <Champion />
+      <Logo>
+        <Champion />
+      </Logo>
       <div>
         <Lead>
           The Super Grand National World Hacker Bowl Cup Games
@@ -32,12 +52,10 @@ export const Header = () => {
         </Lead>
         <GlitchText>The Hackathon</GlitchText>
       </div>
-      <p>
-        <em>
-          The next edition is 24/07/2020 - For more information, see The
-          Hackathon on Twitter
-        </em>
-      </p>
+      <Date>
+        The next edition is 24/07/2020 - For more information, see The Hackathon
+        on Twitter
+      </Date>
     </Root>
   )
 }

@@ -94,48 +94,61 @@ const Ribbon = () => {
   )
 }
 
-const PictureRoot = styled.div`
+const Picture = styled.div`
   align-items: center;
   background: #ffd465;
   border-radius: 50%;
   display: flex;
-  height: 194px;
+  height: 100%;
   justify-content: center;
-  padding: 20px;
-  width: 194px;
+  padding: 2rem;
+  width: 100%;
 
   img {
     border-radius: 50%;
     mix-blend-mode: overlay;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    padding: 1rem;
   }
 `
-
-const Picture = () => {
-  return (
-    <PictureRoot>
-      <img src={naps} />
-    </PictureRoot>
-  )
-}
 
 const ChampionRoot = styled.div`
   display: flex;
   justify-content: center;
+  padding: 1rem;
   position: relative;
-  padding-bottom: 1rem;
+  width: 250px;
+  height: 250px;
 
   svg {
     position: absolute;
     bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
+    width: calc(100% + 6rem);
+  }
+
+  @media (max-width: 600px) {
+    width: 150px;
+    height: 150px;
+
+    svg {
+      width: calc(100% + 3rem);
+      bottom: -18px;
+    }
   }
 `
 
 export const Champion = () => {
   return (
     <ChampionRoot>
-      <Picture />
+      <Picture>
+        <img src={naps} />
+      </Picture>
       <Ribbon />
     </ChampionRoot>
   )

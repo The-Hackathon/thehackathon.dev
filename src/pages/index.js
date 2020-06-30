@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 import { SEO } from "../Seo"
 import { GlobalStyle } from "../components/GlobalStyle"
 import { Header } from "../components/Header"
+import { Signature } from "../components/Signature"
 
 const Layout = styled.div`
   display: flex;
@@ -42,6 +43,7 @@ export default ({ data }) => {
       <SEO title="The Hackathon" />
       <GlobalStyle />
       <Header />
+      <Signature />
       <Content>
         <h2>Win the crown</h2>
         <p>
