@@ -5,50 +5,54 @@ import { GlitchText } from "./GlitchText"
 import { Champion } from "./Champion"
 
 const Lead = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 0 1rem;
 `
 
 const Root = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   flex-basis: 65vh;
   max-width: calc(8 * 57px + 4rem);
-  padding-top: 10rem;
-  padding-bottom: 10rem;
   text-align: center;
   width: 100%;
-  grid-row-gap: 8rem;
-  grid-template-columns: 1fr;
-  justify-content: center;
+  align-items: center;
+`
 
-  @media (max-width: 600px) {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    grid-row-gap: 4rem;
-  }
+const Title = styled.div`
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 const Date = styled.div`
   padding: 0 1rem;
   font-style: italic;
+  margin-bottom: 14rem;
+
+  @media (max-width: 800px) {
+    margin-bottom: 8rem;
+  }
 `
 
 const Logo = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 8rem;
 `
 
 export const Header = () => {
   return (
     <Root>
-      <div>
+      <Title>
         <Lead>
           The Super Grand National World Hacker Bowl Cup Games
           <br />
           <span>casually known as</span>
         </Lead>
         <GlitchText>The Hackathon</GlitchText>
-      </div>
+      </Title>
       <Logo>
         <Champion />
       </Logo>

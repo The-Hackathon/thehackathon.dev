@@ -77,7 +77,19 @@ const GlitchedText = styled.h1`
       }
 
       @media (max-width: 600px) {
-        font-size: 3rem;
+        font-size: 8rem;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 7rem;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 6rem;
+      }
+
+      @media (max-width: 300px) {
+        font-size: 5rem;
       }
     `
 
