@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import { GlitchText } from "./GlitchText"
 import { Champion } from "./Champion"
+import { Logo } from "./Logo"
 
 const Lead = styled.p`
   margin-bottom: 2rem;
@@ -11,6 +12,7 @@ const Lead = styled.p`
 `
 
 const Root = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 65vh;
@@ -37,15 +39,30 @@ const Date = styled.div`
   }
 `
 
-const Logo = styled.div`
+const Podium = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
 `
 
+const LogoWrapper = styled.div`
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+`
+
 export const Header = () => {
   return (
     <Root>
+      <LogoWrapper>
+        <Logo />
+      </LogoWrapper>
       <Title>
         <Lead>
           The Super Grand National World Hacker Bowl Cup Games
@@ -54,9 +71,9 @@ export const Header = () => {
         </Lead>
         <GlitchText>The Hackathon</GlitchText>
       </Title>
-      <Logo>
+      <Podium>
         <Champion />
-      </Logo>
+      </Podium>
       <Date>
         The winners of the first edition, on the 24th of July, will be featured
         here until the second edition, where they will have to defend their

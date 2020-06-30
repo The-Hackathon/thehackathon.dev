@@ -67,6 +67,7 @@ const GlitchedText = styled.h1`
         clip: rect(44px, 450px, 56px, 0);
         animation: ${() => generateGlitchSkewClip()} 5s infinite linear
           alternate-reverse;
+        color: rgb(255, 184, 0);
       }
 
       &:after {

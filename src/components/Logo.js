@@ -1,15 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const range = (start, end, increment = 1) => {
-  const items = []
-
-  for (let i = start; i <= end; i += increment) {
-    items.push(i)
-  }
-
-  return items
-}
+import { range } from "../utils"
 
 const diffDates = (date1, date2) => {
   return date2.getTime() - date1.getTime()
@@ -75,7 +67,7 @@ export class Logo extends React.Component {
                 fill:
                   Math.max(Math.abs(i), Math.abs(j)) / 9 - Math.random() * 0.7 <
                   0.4
-                    ? "#fe8019"
+                    ? "#FFB800"
                     : "transparent",
               }}
               shapeRendering="crispEdges"
@@ -87,7 +79,7 @@ export class Logo extends React.Component {
           height="160"
           x="-80"
           y="-80"
-          style={{ fill: "#1d2021" }}
+          style={{ fill: "#FFFFFF" }}
           shapeRendering="crispEdges"
         />
         <rect
@@ -95,7 +87,7 @@ export class Logo extends React.Component {
           height="40"
           x="-40"
           y="-20"
-          style={{ fill: "#1d2021" }}
+          style={{ fill: "#FFFFFF" }}
           shapeRendering="crispEdges"
         />
         <rect
@@ -103,7 +95,7 @@ export class Logo extends React.Component {
           height="160"
           x="20"
           y="-80"
-          style={{ fill: "#1d2021" }}
+          style={{ fill: "#FFFFFF" }}
           shapeRendering="crispEdges"
         />
       </Root>
