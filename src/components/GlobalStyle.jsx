@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   html, body, #___gatsby, #gatsby-focus-wrapper  {
     background: white;
     color: #333;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     height: 100%;
     line-height: 1.5em;
