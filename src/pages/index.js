@@ -22,28 +22,11 @@ const Content = styled.div`
   grid-row-gap: 2rem;
 `
 
-const TeamMember = styled(Link)`
-  display: grid;
-  grid-row-gap: 0.25rem;
-  justify-content: center;
-
-  span {
-    text-align: center;
-  }
-`
-
-const Team = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 80px);
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-`
-
 const Section = styled.div`
   margin-bottom: 4rem;
 `
 
-export default ({ data }) => {
+export default () => {
   return (
     <Layout>
       <SEO title="The Hackathon" />
@@ -101,71 +84,30 @@ export default ({ data }) => {
           </p>
         </div>
         <div>
-          <h2>Brought to you by</h2>
-          <Team>
-            <TeamMember to="#">
-              <Img fixed={data.davide.childImageSharp.fixed} />
-              <span>Davide</span>
-            </TeamMember>
-            <TeamMember to="#">
-              <Img fixed={data.gabriel.childImageSharp.fixed} />
-              <span>Gabriel</span>
-            </TeamMember>
-            <TeamMember to="#">
-              <Img fixed={data.mendes.childImageSharp.fixed} />
-              <span>Mendes</span>
-            </TeamMember>
-            <TeamMember to="#">
-              <Img fixed={data.naps.childImageSharp.fixed} />
-              <span>Naps</span>
-            </TeamMember>
-            <TeamMember to="#">
-              <Img fixed={data.resende.childImageSharp.fixed} />
-              <span>Resende</span>
-            </TeamMember>
-          </Team>
+          <h2>About</h2>
+          <p>
+            The Super Grand National World Hacker Bowl Cup Games is brought to
+            you by 5 fearless developers:
+          </p>
+          <ul>
+            <li>
+              <Link to="#">Davide "The Linter" Silva</Link>
+            </li>
+            <li>
+              <Link to="#">Gabriel</Link>
+            </li>
+            <li>
+              <Link to="#">Mendes</Link>
+            </li>
+            <li>
+              <Link to="#">Naps</Link>
+            </li>
+            <li>
+              <Link to="#">Resende</Link>
+            </li>
+          </ul>
         </div>
       </Content>
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    mendes: file(relativePath: { eq: "mendes.jpg" }) {
-      childImageSharp {
-        fixed(width: 80, height: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
-    naps: file(relativePath: { eq: "naps.jpg" }) {
-      childImageSharp {
-        fixed(width: 80, height: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
-    resende: file(relativePath: { eq: "resende.jpg" }) {
-      childImageSharp {
-        fixed(width: 80, height: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
-    davide: file(relativePath: { eq: "davide.jpg" }) {
-      childImageSharp {
-        fixed(width: 80, height: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
-    gabriel: file(relativePath: { eq: "gabriel.jpg" }) {
-      childImageSharp {
-        fixed(width: 80, height: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
-  }
-`

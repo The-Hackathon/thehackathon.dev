@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { GlitchText } from "./GlitchText"
@@ -39,7 +40,7 @@ const Date = styled.div`
 const Logo = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 `
 
 export const Header = () => {
@@ -57,8 +58,13 @@ export const Header = () => {
         <Champion />
       </Logo>
       <Date>
-        The next edition is 24/07/2020 - For more information, see The Hackathon
-        on Twitter
+        The winners of the first edition, on the 24th of July, will be featured
+        here until the second edition, where they will have to defend their
+        title. For more information, see{" "}
+        <Link to="https://twitter.com/the_hackathon">
+          The Hackathon on Twitter
+        </Link>
+        .
       </Date>
     </Root>
   )

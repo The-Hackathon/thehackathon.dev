@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: #fe8019;
+    color: inherit;
   }
 
   * {
@@ -52,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   ul {
