@@ -7,6 +7,7 @@ import { SEO } from "../Seo"
 import { GlobalStyle } from "../components/GlobalStyle"
 import { Header } from "../components/Header"
 import { Signature } from "../components/Signature"
+import { Rules } from "../components/Rules"
 
 const Layout = styled.div`
   display: flex;
@@ -20,33 +21,6 @@ const Content = styled.div`
   padding: 2rem;
   display: grid;
   grid-row-gap: 2rem;
-`
-
-const Rules = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`
-
-const Rule = styled.li`
-  position: relative;
-  padding: 0 0 0 5rem;
-  margin: 0 0 3rem;
-
-  &::before {
-    content: '${({ nr }) => nr}';
-    position: absolute; 
-    top: 0;
-    left: 0;
-    transform: translate(0%, -5%);
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px dashed #333;
-  }
 `
 
 export default () => {
@@ -77,17 +51,7 @@ export default () => {
         </div>
         <div>
           <h2>The Rules</h2>
-          <Rules>
-            <Rule nr={1}>
-              to enter, participants must donate to a charitable instituition
-              and email us proof.
-            </Rule>
-            <Rule nr={2}>
-              participants can go at it as a team, individually or join a pool
-              of other participants who also have no team, to get to know each
-              other, bounce ideas and take on a project together.
-            </Rule>
-          </Rules>
+          <Rules />
         </div>
         <div>
           <h2>The Prize</h2>

@@ -3,9 +3,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
 
-const superFuschia = "#FF00EF"
-const turquoiseN7 = "#00F9FF"
-
 const random = limit => Math.round(Math.random() * limit)
 
 const forSteps = (total, fn) => {
@@ -63,16 +60,16 @@ const GlitchedText = styled.h1`
 
       &:before {
         left: 2px;
-        text-shadow: -2px 0 ${superFuschia};
+        text-shadow: -2px 0 var(--color-fuschia);
         clip: rect(44px, 450px, 56px, 0);
         animation: ${() => generateGlitchSkewClip()} 5s infinite linear
           alternate-reverse;
-        color: rgb(255, 184, 0);
+        color: var(--color-fuschia);
       }
 
       &:after {
         left: -2px;
-        text-shadow: -2px 0 ${turquoiseN7}, 2px 2px ${superFuschia};
+        text-shadow: -2px 0 var(--color-aqua), 2px 2px var(--color-fuschia);
         animation: ${() => generateGlitchSkewClip()} 1s infinite linear
           alternate-reverse;
       }

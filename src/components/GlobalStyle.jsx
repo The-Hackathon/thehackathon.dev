@@ -3,9 +3,18 @@ import { createGlobalStyle } from "styled-components"
 import "../fonts.css"
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --color-fuschia: #EF32DC;
+    --color-aqua: #00f9ff;
+    --color-blue: #154884;
+    --color-black: #333333;
+    --color-white: #ffffff;
+    --color-eminence: #7A2E98;
+  }
+
   html, body, #___gatsby, #gatsby-focus-wrapper  {
-    background: white;
-    color: #333;
+    background: var(--color-white);
+    color: var(--color-black);
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     height: 100%;
@@ -18,6 +27,11 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: 600px) {
       font-size: 12px;
     }
+  }
+
+  ::selection {
+    background-color: var(--color-fuschia);
+    color: var(--color-black);
   }
 
   a {

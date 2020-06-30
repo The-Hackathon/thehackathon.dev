@@ -8,7 +8,7 @@ import unicorn from "../images/unicorn.png"
 
 const Picture = styled.div`
   align-items: center;
-  background: #ffd465;
+  background: var(--color-fuschia);
   border-radius: 50%;
   display: flex;
   height: 100%;
@@ -29,6 +29,8 @@ const Picture = styled.div`
   }
 `
 
+const RibbonWrapper = styled.div``
+
 const ChampionRoot = styled.div`
   display: flex;
   justify-content: center;
@@ -37,22 +39,26 @@ const ChampionRoot = styled.div`
   width: 250px;
   height: 250px;
 
-  svg {
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 6rem);
-    z-index: 1;
+  ${RibbonWrapper} {
+    svg {
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 6rem);
+      z-index: 1;
+    }
   }
 
   @media (max-width: 600px) {
     width: 150px;
     height: 150px;
 
-    svg {
-      width: calc(100% + 3rem);
-      bottom: -18px;
+    ${RibbonWrapper} {
+      svg {
+        width: calc(100% + 3rem);
+        bottom: -18px;
+      }
     }
   }
 `
@@ -63,7 +69,9 @@ export const Champion = () => {
       <Picture>
         <img src={unicorn} alt="Photo of a stuffed unicorn" />
       </Picture>
-      <Ribbon />
+      <RibbonWrapper>
+        <Ribbon />
+      </RibbonWrapper>
     </ChampionRoot>
   )
 }

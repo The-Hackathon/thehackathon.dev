@@ -9,6 +9,14 @@ const diffDates = (date1, date2) => {
 
 const Root = styled.svg`
   margin-bottom: 3rem;
+
+  text {
+    font-family: "Mohave";
+    font-size: 7rem;
+    font-weight: bold;
+    fill: var(--color-white);
+    transform: translate(-15%, 25%);
+  }
 `
 
 export class Logo extends React.Component {
@@ -30,12 +38,12 @@ export class Logo extends React.Component {
     const newTime = new Date()
 
     if (diffDates(this.time, newTime) > 150) {
-      range(-10, 9).map(j =>
-        range(-10, 9).map(
+      range(-6, 4).map(j =>
+        range(-6, 4).map(
           i =>
             (this.els[i][j].style.fill =
-              Math.max(Math.abs(i), Math.abs(j)) / 9 - Math.random() * 0.7 < 0.4
-                ? "#fe8019"
+              Math.max(Math.abs(i), Math.abs(j)) / 5 - Math.random() * 0.7 < 0.4
+                ? "var(--color-fuschia)"
                 : "transparent")
         )
       )
@@ -53,51 +61,30 @@ export class Logo extends React.Component {
 
   render() {
     return (
-      <Root width="160" height="160" viewBox="-180 -180 340 340">
-        {range(-10, 9).map(j =>
-          range(-10, 9).map(i => (
+      <Root width="160" height="160" viewBox="-85 -85 170 170">
+        {range(-6, 4).map(j =>
+          range(-6, 4).map(i => (
             <rect
               ref={el => this.saveRef(el, i, j)}
               key={`${i}${j}`}
-              width="20"
-              height="20"
-              x={i * 20}
-              y={j * 20}
+              width="17"
+              height="17"
+              x={i * 17}
+              y={j * 17}
               style={{
                 fill:
-                  Math.max(Math.abs(i), Math.abs(j)) / 9 - Math.random() * 0.7 <
+                  Math.max(Math.abs(i), Math.abs(j)) / 5 - Math.random() * 0.7 <
                   0.4
-                    ? "#FFB800"
+                    ? "var(--color-fuschia)"
                     : "transparent",
               }}
               shapeRendering="crispEdges"
             />
           ))
         )}
-        <rect
-          width="40"
-          height="160"
-          x="-80"
-          y="-80"
-          style={{ fill: "#FFFFFF" }}
-          shapeRendering="crispEdges"
-        />
-        <rect
-          width="80"
-          height="40"
-          x="-40"
-          y="-20"
-          style={{ fill: "#FFFFFF" }}
-          shapeRendering="crispEdges"
-        />
-        <rect
-          width="40"
-          height="160"
-          x="20"
-          y="-80"
-          style={{ fill: "#FFFFFF" }}
-          shapeRendering="crispEdges"
-        />
+        <text x="0" y="0">
+          H
+        </text>
       </Root>
     )
   }

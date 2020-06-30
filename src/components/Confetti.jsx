@@ -8,11 +8,11 @@ const show = rotate => keyframes`
     transform: rotate(${rotate}deg) scale(0, 1);
   }
 
-  1% {
+  2% {
     transform: rotate(${rotate}deg) scale(1.1);
   }
 
-  2%, 50% {
+  3%, 50% {
     transform: rotate(${rotate}deg) scale(1);
   }
 
@@ -20,15 +20,15 @@ const show = rotate => keyframes`
     transform: rotate(${rotate}deg) scale(1);
   }
 
-  51%, 100% {
+  52%, 100% {
     transform: rotate(${rotate}deg) scale(0, 1);
   }
 `
 
 const Base = styled.div`
   position: absolute;
-  top: ${({ top }) => top}%;
-  left: ${({ left }) => left}%;
+  top: ${({ top }) => top};
+  left: ${({ left }) => left};
 
   transform: scale(0) rotate(${({ rotate }) => rotate}deg);
   transform-origin: left;
@@ -36,62 +36,20 @@ const Base = styled.div`
   animation-name: ${({ rotate }) => show(rotate)};
   animation-delay: ${({ delay }) => delay}s;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 20s;
 `
-
-const Cross = ({ delay, top, left, rotate, color }) => {
-  return (
-    <Base delay={delay} rotate={rotate} top={top} left={left}>
-      <svg
-        width="46"
-        height="45"
-        viewBox="0 0 46 45"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M18.383 27.0585L18.383 38.8322L27.383 38.8322L27.383 27.0585L39.1575 27.0585L39.1575 18.0585L27.383 18.0585L27.383 6.28484L18.383 6.28484L18.383 18.0585L6.61012 18.0585L6.61012 27.0585L18.383 27.0585Z"
-          fill={color || "#2FFBB1"}
-        />
-      </svg>
-    </Base>
-  )
-}
 
 const Line = ({ delay, top, left, rotate, color }) => {
   return (
     <Base delay={delay} rotate={rotate} top={top} left={left}>
       <svg
-        width="25"
-        height="33"
-        viewBox="0 0 25 33"
+        width="180"
+        height="3"
+        viewBox="0 0 180 3"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect
-          y="28.1868"
-          width="32.5473"
-          height="9"
-          fill={color || "#AC58FF"}
-        />
-      </svg>
-    </Base>
-  )
-}
-
-const Circle = ({ delay, top, left, rotate, color }) => {
-  return (
-    <Base delay={delay} rotate={rotate} top={top} left={left}>
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 12 12"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle cx="6" cy="6" r="6" fill={color || "#87CAEF"} />
+        <rect y="0" width="180" height="3" fill={color} />
       </svg>
     </Base>
   )
@@ -106,12 +64,28 @@ const Root = styled.div`
   margin-right: -20rem;
 `
 
+const randomColor = () => {
+  const val = Math.random()
+  if (val > 0.75) return "var(--color-blue)"
+  else if (val > 0.5) return "var(--color-aqua)"
+  else if (val >= 0.25) return "var(--color-fuschia)"
+  else return "var(--color-black)"
+}
+
+const randomRotation = () => {
+  const val = Math.random()
+  if (val > 0.75) return 0
+  else if (val > 0.5) return 90
+  else if (val >= 0.25) return 180
+  else return -90
+}
+
 const generatePosition = () => {
   const position = {
-    rotate: Math.floor(Math.random() * 360),
-    top: Math.floor(Math.random() * 90),
-    left: Math.floor(Math.random() * 100),
-    color: `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`,
+    rotate: randomRotation(),
+    top: `${Math.floor(Math.random() * 50 + 25)}%`,
+    left: `${Math.floor(Math.random() * 100)}%`,
+    color: randomColor(),
   }
 
   return position
@@ -120,14 +94,23 @@ const generatePosition = () => {
 export const Confetti = () => {
   return (
     <Root>
-      {range(0, 8).map(i => (
+      {range(-10, 10).map(i => (
         <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
       ))}
-      {range(0, 8).map(i => (
-        <Circle delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
+      {range(0, 10).map(i => (
+        <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
       ))}
-      {range(0, 8).map(i => (
-        <Cross delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
+      {range(0, 10).map(i => (
+        <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
+      ))}
+      {range(0, 10).map(i => (
+        <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
+      ))}
+      {range(0, 10).map(i => (
+        <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
+      ))}
+      {range(0, 10).map(i => (
+        <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
       ))}
     </Root>
   )

@@ -9,6 +9,9 @@ import { Logo } from "./Logo"
 const Lead = styled.p`
   margin-bottom: 2rem;
   padding: 0 1rem;
+  font-family: Merriweather, serif;
+  font-size: 0.8em;
+  line-height: 1.2em;
 `
 
 const Root = styled.div`
@@ -23,7 +26,7 @@ const Root = styled.div`
 `
 
 const Title = styled.div`
-  height: 96vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,9 +78,9 @@ export const Header = () => {
         <Champion />
       </Podium>
       <Date>
-        The winners of the first edition, on the 24th of July, will be featured
-        here until the second edition, where they will have to defend their
-        title. For more information, see{" "}
+        The next edition is 27/07/2020.
+        <br />
+        For more information, see{" "}
         <Link to="https://twitter.com/the_hackathon">
           The Hackathon on Twitter
         </Link>
