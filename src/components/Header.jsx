@@ -41,9 +41,6 @@ const Logo = styled.div`
 export const Header = () => {
   return (
     <Root>
-      <Logo>
-        <Champion />
-      </Logo>
       <div>
         <Lead>
           The Super Grand National World Hacker Bowl Cup Games
@@ -52,6 +49,9 @@ export const Header = () => {
         </Lead>
         <GlitchText>The Hackathon</GlitchText>
       </div>
+      <Logo>
+        <Champion />
+      </Logo>
       <Date>
         The next edition is 24/07/2020 - For more information, see The Hackathon
         on Twitter
