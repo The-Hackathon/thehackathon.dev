@@ -22,8 +22,31 @@ const Content = styled.div`
   grid-row-gap: 2rem;
 `
 
-const Section = styled.div`
-  margin-bottom: 4rem;
+const Rules = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`
+
+const Rule = styled.li`
+  position: relative;
+  padding: 0 0 0 5rem;
+  margin: 0 0 3rem;
+
+  &::before {
+    content: '${({ nr }) => nr}';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    transform: translate(0%, -5%);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #333;
+  }
 `
 
 export default () => {
@@ -54,17 +77,17 @@ export default () => {
         </div>
         <div>
           <h2>The Rules</h2>
-          <ul>
-            <li>
+          <Rules>
+            <Rule nr={1}>
               to enter, participants must donate to a charitable instituition
               and email us proof.
-            </li>
-            <li>
+            </Rule>
+            <Rule nr={2}>
               participants can go at it as a team, individually or join a pool
               of other participants who also have no team, to get to know each
               other, bounce ideas and take on a project together.
-            </li>
-          </ul>
+            </Rule>
+          </Rules>
         </div>
         <div>
           <h2>The Prize</h2>

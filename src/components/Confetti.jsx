@@ -120,13 +120,13 @@ const generatePosition = () => {
 export const Confetti = () => {
   return (
     <Root>
-      {range(0, 15).map(i => (
+      {range(0, 8).map(i => (
         <Line delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
       ))}
-      {range(0, 15).map(i => (
+      {range(0, 8).map(i => (
         <Circle delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
       ))}
-      {range(0, 15).map(i => (
+      {range(0, 8).map(i => (
         <Cross delay={i * 2 * Math.random()} key={i} {...generatePosition()} />
       ))}
     </Root>
