@@ -26,9 +26,11 @@ const Rule = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dashed var(--color-fuschia);
+    border: 3px dashed var(--color-fuschia);
     color: var(--color-eminence);
     font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Mohave";
   }
 `
 
@@ -49,7 +51,9 @@ export const Rules = () => {
   return (
     <Root>
       {rules.map((text, i) => (
-        <Rule nr={i + 1}>{text}</Rule>
+        <Rule key={i} nr={i + 1}>
+          {text}
+        </Rule>
       ))}
     </Root>
   )

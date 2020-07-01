@@ -9,7 +9,6 @@ import { Logo } from "./Logo"
 const Lead = styled.p`
   margin-bottom: 2rem;
   padding: 0 1rem;
-  font-family: Merriweather, serif;
   font-size: 0.8em;
   line-height: 1.2em;
 `

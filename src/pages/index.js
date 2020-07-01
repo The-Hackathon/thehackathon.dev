@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 
 import { SEO } from "../Seo"
 import { GlobalStyle } from "../components/GlobalStyle"
 import { Header } from "../components/Header"
 import { Signature } from "../components/Signature"
 import { Rules } from "../components/Rules"
+import { Team } from "../components/Team"
 
 const Layout = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ const Content = styled.div`
   grid-row-gap: 2rem;
 `
 
-export default () => {
+export default ({ data }) => {
   return (
     <Layout>
       <SEO title="The Hackathon" />
@@ -71,32 +71,62 @@ export default () => {
           </p>
         </div>
         <div>
-          <h2>About</h2>
+          <h2>Brought to you</h2>
           <p>
             The Super Grand National World Hacker Bowl Cup Games is brought to
-            you by 5 fearless developers:
+            you by 5 fearless{" "}
+            {
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: `<!-- does this include spiders? cuz im afraid of spiders -->`,
+                }}
+              />
+            }{" "}
+            developers:
           </p>
-          <ul>
-            <li>
-              <Link to="https://twitter.com/DavideSilva_">
-                Davide "The Linter" Silva
-              </Link>
-            </li>
-            <li>
-              <Link to="https://twitter.com/gabrielgpoca">Gabriel</Link>
-            </li>
-            <li>
-              <Link to="https://twitter.com/justmnds">Mendes</Link>
-            </li>
-            <li>
-              <Link to="https://twitter.com/naps62">Naps</Link>
-            </li>
-            <li>
-              <Link to="https://twitter.com/Resende_666">Resende</Link>
-            </li>
-          </ul>
+          <Team members={data} />
         </div>
       </Content>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    mendes: file(relativePath: { eq: "mendes.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 160, maxHeight: 160, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    naps: file(relativePath: { eq: "naps.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 160, maxHeight: 160, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    resende: file(relativePath: { eq: "resende.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 160, maxHeight: 160, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    davide: file(relativePath: { eq: "davide.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 160, maxHeight: 160, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gabriel: file(relativePath: { eq: "gabriel.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 160, maxHeight: 160, quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
