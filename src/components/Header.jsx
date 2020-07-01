@@ -17,7 +17,6 @@ const Root = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-basis: 65vh;
   max-width: calc(8 * 57px + 4rem);
   text-align: center;
   width: 100%;

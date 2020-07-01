@@ -60,8 +60,6 @@ const Root = styled.div`
   width: calc(100% + 40rem);
   height: calc(100% + 5rem);
   margin-top: -5rem;
-  margin-left: -20rem;
-  margin-right: -20rem;
 `
 
 const randomColor = () => {

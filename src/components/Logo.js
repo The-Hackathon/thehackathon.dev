@@ -15,7 +15,6 @@ const Root = styled.svg`
     font-size: 7rem;
     font-weight: bold;
     fill: var(--color-white);
-    transform: translate(-15%, 25%);
   }
 `
 
@@ -82,7 +81,7 @@ export class Logo extends React.Component {
             />
           ))
         )}
-        <text x="0" y="0">
+        <text x="-25" y="40">
           H
         </text>
       </Root>
