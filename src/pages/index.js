@@ -26,7 +26,7 @@ const Content = styled.div`
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title="The Hackathon" />
+      <SEO title="Home" />
       <GlobalStyle />
       <Header />
       <Signature />
