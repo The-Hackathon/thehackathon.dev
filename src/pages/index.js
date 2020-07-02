@@ -83,52 +83,68 @@ export default ({ data }) => {
         <div>
           <h2>About</h2>
           <p>
-            The Hackathon will last for 48h and the 1st edition will start on
-            27/07/2020 17:00 GMT and end on 29/07/2020 17:00 GMT.
+            The Hackathon will last for 48h and the 1st edition will start on{" "}
+            <strong>27/07/2020 17:00 GMT</strong> and end on{" "}
+            <strong>29/07/2020 17:00 GMT</strong>.
           </p>
           <p>
             During 48 hours, hackers will get together, have fun and share
-            knowledge. There is no particular theme, like blockchain,
-            decentralisation or a particular technology. The funnier, more
-            creative the project is, the higher chance of winning.
+            knowledge. <strong>There is no particular theme</strong>, like
+            blockchain, decentralisation or a particular technology. The
+            funnier, more creative the project is, the higher chance of winning.
           </p>
           <p>
             The main point is to have fun. You’re in it for the glory of
             winning. There is no major prize, no $50k cheque, no incubation
             period for a startup, no shady sponsors with ulterior motives or
-            whatever. It’s all about people getting together and building
-            something special.
+            whatever.{" "}
+            <strong>
+              It’s all about people getting together and building something
+              special.
+            </strong>
           </p>
           <p>
             Along the way we plan on helping institutions. This is the Internet,
-            the hackers, giving back to the non-virtual world. To enter, you or
-            your team will have to email us proof of a donation to
-            letmein@thehackathon.dev. Any amount will do and you get to choose
-            the institutions. That’s it. No ticket, no participation limit. Just
-            give back to the world and we’ll open the doors to you. We want to
-            get enough people join so that we make an impact with institutions,
-            so please share with your hacker friends. We’re serious. Annoy them
-            as much as you can. We salute you.
+            the hackers, giving back to the non-virtual world.{" "}
+            <strong>
+              To enter, you or your team will have to email us proof of a
+              donation to{" "}
+              <Link to="mailto:letmein@thehackathon.dev">
+                letmein@thehackathon.dev
+              </Link>
+              . Any amount will do and you get to choose the institutions.
+            </strong>{" "}
+            That’s it. No ticket, no participation limit. Just give back to the
+            world and we’ll open the doors to you. We want to get enough people
+            join so that we make an impact with institutions, so please share
+            with your hacker friends. We’re serious. Annoy them as much as you
+            can. We salute you.
           </p>
           <p>
-            Everything will happen on Discord. After the donation proof you will
-            receive an invite to join the hackathon server. During those 48
-            hours, teams will have a dedicated voice and text channel.
+            Everything will happen on Discord.{" "}
+            <strong>After the donation proof you will receive an invite</strong>{" "}
+            to join the hackathon server. During those 48 hours, teams will have
+            a dedicated voice and text channel.
           </p>
           <p>
-            We know hacking alone is a bummer, so we’ll setup a moment for those
-            who want to find other hackers and get together for a project.
+            We know hacking alone is a bummer, so{" "}
+            <strong>
+              we’ll setup a moment for those who want to find other hackers and
+              get together for a project.
+            </strong>
           </p>
           <p>
-            The Hackathon is also a moment for learning, so you’ll have the
-            chance to watch talks and be a speaker! You don’t have to submit a
-            talk or apply. You just let everyone know what the talk is about and
-            when it starts. Do so at least one hour beforehand to make sure
-            people find your talk. We’ll create two dedicated talk channels to
-            ensure that there aren’t too many tracks. To watch, you’ll just have
-            to join the channel. That’s it! Everything will be simple, nothing
-            will be fancy, the projects will awesome and the force will be with
-            you.
+            The Hackathon is also a moment for learning, so{" "}
+            <strong>
+              you’ll have the chance to watch talks and be a speaker!
+            </strong>{" "}
+            You don’t have to submit a talk or apply. You just let everyone know
+            what the talk is about and when it starts. Do so at least one hour
+            beforehand to make sure people find your talk. We’ll create two
+            dedicated talk channels to ensure that there aren’t too many tracks.
+            To watch, you’ll just have to join the channel. That’s it!
+            Everything will be simple, nothing will be fancy, the projects will
+            awesome and the force will be with you.
           </p>
         </div>
         <div>
