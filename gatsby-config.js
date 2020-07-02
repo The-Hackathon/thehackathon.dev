@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Hackathon`,
-    description: `The Super Grand National World Hacker Bowl Cup Games causally know as The Hackathon.`,
+    description: `The Super Grand National World Hacker Bowl Cup Games casually known as The Hackathon.`,
     author: `@the_hackathon`,
     siteUrl: "https://thehackathon.dev/",
   },
