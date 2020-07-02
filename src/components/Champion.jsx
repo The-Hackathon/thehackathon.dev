@@ -67,7 +67,7 @@ export const Champion = () => {
     <ChampionRoot>
       <Confetti />
       <Picture>
-        <img src={unicorn} alt="Photo of a stuffed unicorn" />
+        <img src={unicorn} alt="A stuffed unicorn" />
       </Picture>
       <RibbonWrapper>
         <Ribbon />
