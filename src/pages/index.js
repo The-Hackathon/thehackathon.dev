@@ -69,14 +69,10 @@ export default ({ data }) => {
               The Crown. The most coveted possession in the Internet. This means
               being featured on the website until the next edition, where you’ll
               get the chance to defend your title. You will also be allowed to
-              use the official tagline of Hacker Of The Season™. A Hacker Kit!
-              We don’t really know what it is yet...
+              use the official tagline of Hacker Of The Season™.
             </li>
 
-            <li>
-              We’ll be communicating through Twitter so follow us there to keep
-              up with the event.
-            </li>
+            <li>A Hacker Kit! We don’t really know what it is yet...</li>
           </ul>
           <p>
             We’ll be communicating through{" "}
