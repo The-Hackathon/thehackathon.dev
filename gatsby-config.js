@@ -3,8 +3,10 @@ module.exports = {
     title: `The Hackathon`,
     description: `The Super Grand National World Hacker Bowl Cup Games causally know as The Hackathon.`,
     author: `@the_hackathon`,
+    siteUrl: "https://thehackathon.dev/",
   },
   plugins: [
+    "gatsby-plugin-cname",
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
