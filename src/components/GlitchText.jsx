@@ -33,7 +33,9 @@ const generateGlitchSkewClip = () => keyframes`
   ${forSteps(
     20,
     () => `
-        clip: rect(${random(500)}px, 9999px, ${random(500)}px, 0);
+        clip: rect(min(${random(500)}px, 100vw), 9999px, min(${random(
+      500
+    )}px, 100vw), 0);
         transform: skew(${random(100) / 100}deg);
         `
   )}
