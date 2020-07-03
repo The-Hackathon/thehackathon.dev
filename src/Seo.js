@@ -9,16 +9,20 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { useLocation } from "@reach/router"
 
 export function SEO({ description, lang, meta, title }) {
+  const { pathname } = useLocation()
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
             author
+            description
+            image
+            siteUrl
+            title
           }
         }
       }
@@ -26,22 +30,30 @@ export function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
+  const fullTitle = title
+    ? `${site.siteMetadata.title} | ${title}`
+    : site.siteMetadata.title
+  const url = `${site.siteMetadata.siteUrl}${pathname}`
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`${site.siteMetadata.title} | %s `}
+      title={fullTitle}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
+          name: "og:url",
+          content: url,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: fullTitle,
         },
         {
           property: `og:description`,
@@ -61,11 +73,19 @@ export function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: fullTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: "twitter:image",
+          content: image,
+        },
+        {
+          name: "og:image",
+          content: image,
         },
       ].concat(meta)}
     />
@@ -73,9 +93,9 @@ export function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
+  description: ``,
   lang: `en`,
   meta: [],
-  description: ``,
 }
 
 SEO.propTypes = {

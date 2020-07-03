@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `The Hackathon`,
-    description: `The Super Grand National World Hacker Bowl Cup Games casually known as The Hackathon.`,
     author: `@the_hackathon`,
-    siteUrl: "https://thehackathon.dev/",
+    description: `The Super Grand National World Hacker Bowl Cup Games casually known as The Hackathon.`,
+    image: "/banner.jpg",
+    siteUrl: "https://perfect-chicken-37.serverless.social",
+    title: `The Hackathon`,
   },
   plugins: [
     "gatsby-plugin-cname",
