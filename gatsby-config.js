@@ -3,7 +3,7 @@ module.exports = {
     author: `@the_hackathon`,
     description: `The Super Grand National World Hacker Bowl Cup Games casually known as The Hackathon.`,
     image: "/banner.jpg",
-    siteUrl: "https://perfect-chicken-37.serverless.social",
+    siteUrl: "https://thehackathon.dev",
     title: `The Hackathon`,
   },
   plugins: [
