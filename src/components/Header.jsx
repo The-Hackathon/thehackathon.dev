@@ -76,7 +76,7 @@ export const Header = () => {
         <Champion />
       </Podium>
       <Date>
-        The next edition is 27/07/2020.
+        The next edition is 31/07/2020.
         <br />
         For more information, see{" "}
         <Link to="https://twitter.com/the_hackathon">

@@ -84,8 +84,8 @@ export default ({ data }) => {
           <h2>About</h2>
           <p>
             The Hackathon will last for 48h and the 1st edition will start on{" "}
-            <strong>27/07/2020 17:00 GMT</strong> and end on{" "}
-            <strong>29/07/2020 17:00 GMT</strong>.
+            <strong>31/07/2020 17:00 GMT</strong> and end on{" "}
+            <strong>02/08/2020 17:00 GMT</strong>.
           </p>
           <p>
             During 48 hours, hackers will get together, have fun and share

@@ -44,7 +44,7 @@ const rules = [
   "If you are planning on giving a talk, you should plan for 20 minutes tops. We want everyone to have the chance to speak. And we will only allow two talks in parallel at all times, in order to give everyone the opportunity to see something they might be interested in.",
   `No need to submit us your talk beforehand. Just send a notice in the Discord with some advance so that everyone is aware of it.`,
   "The final project submissions will be done over Twitter. Post a pitch along with a video presentation of your project and the link to your public Git-based host.",
-  "You should submit your final project by 29/07/2020 16:00 GMT.",
+  "You should submit your final project by 02/08/2020 16:00 GMT.",
 ]
 
 export const Rules = () => {
