@@ -37,6 +37,13 @@ module.exports = {
         path: `${__dirname}/src/fonts/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        code: 'the-hackathon',
+        referrer: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
