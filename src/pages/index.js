@@ -121,6 +121,16 @@ export default ({ data }) => {
             can. We salute you.
           </p>
           <p>
+            We don't want to exclude participation due to monetary restrictions.{" "}
+            <strong>
+              If you're a student or are currently unemployed, you can still
+              take part in the event without any donation.
+            </strong>
+            Just email us a picture of you in your favourite hacker pose (bonus
+            point if you are wearing a mask!). You don't need to specify your
+            situation.
+          </p>
+          <p>
             Everything will happen on Discord.{" "}
             <strong>After the donation proof you will receive an invite</strong>{" "}
             to join the hackathon server. During those 48 hours, teams will have
