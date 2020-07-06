@@ -121,13 +121,13 @@ export default ({ data }) => {
             can. We salute you.
           </p>
           <p>
-            We don't want to exclude participation due to monetary restrictions.{" "}
+            We don't want you to miss out due to monetary restrictions.{" "}
             <strong>
               If you're a student or are currently unemployed, you can still
               take part in the event without any donation.
-            </strong>
+            </strong>{" "}
             Just email us a picture of you in your favourite hacker pose (bonus
-            point if you are wearing a mask!). You don't need to specify your
+            points if you are wearing a mask!). You don't need to specify your
             situation.
           </p>
           <p>
