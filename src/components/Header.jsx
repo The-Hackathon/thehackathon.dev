@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { GlitchText } from "./GlitchText"
 import { Champion } from "./Champion"
 import { Logo } from "./Logo"
+import { Confetti } from "./Confetti"
 
 const Lead = styled.p`
   margin-bottom: 2rem;
@@ -44,6 +45,7 @@ const Podium = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  position: relative;
 `
 
 const LogoWrapper = styled.div`
@@ -73,6 +75,7 @@ export const Header = () => {
         <GlitchText>The Hackathon</GlitchText>
       </Title>
       <Podium>
+        <Confetti />
         <Champion />
       </Podium>
       <Date>

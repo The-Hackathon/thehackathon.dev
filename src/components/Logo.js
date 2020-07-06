@@ -40,6 +40,7 @@ export class Logo extends React.Component {
       range(-6, 4).map(j =>
         range(-6, 4).map(
           i =>
+            this.els[i][j] &&
             (this.els[i][j].style.fill =
               Math.max(Math.abs(i), Math.abs(j)) / 5 - Math.random() * 0.7 < 0.4
                 ? "var(--color-fuschia)"
