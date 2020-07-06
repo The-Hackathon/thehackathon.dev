@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     color: var(--color-black);
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    height: 100%;
     line-height: 1.5em;
     margin: 0;
     padding: 0;
@@ -45,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 4rem;
   }
 
   h2 {

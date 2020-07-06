@@ -45,7 +45,6 @@ const GlitchedText = styled.h1`
       position: relative;
       margin-top: 0;
       font-size: 8rem;
-      padding: 0 1rem;
 
       animation: ${() =>
         generateGlitchSkew()} 1s infinite linear alternate-reverse;
@@ -81,15 +80,19 @@ const GlitchedText = styled.h1`
       }
 
       @media (max-width: 500px) {
-        font-size: 7rem;
+        font-size: 8rem;
       }
 
       @media (max-width: 400px) {
         font-size: 6rem;
       }
 
-      @media (max-width: 300px) {
+      @media (max-width: 320px) {
         font-size: 5rem;
+      }
+
+      @media (max-width: 250px) {
+        font-size: 4rem;
       }
     `
 
