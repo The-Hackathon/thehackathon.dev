@@ -8,6 +8,7 @@ import { Header } from "../components/Header"
 import { Signature } from "../components/Signature"
 import { Rules } from "../components/Rules"
 import { Team } from "../components/Team"
+import { Footer } from "../components/Footer"
 
 const Layout = styled.div`
   display: flex;
@@ -19,6 +20,7 @@ const Content = styled.div`
   max-width: calc(8 * 70px + 4rem);
   width: 100%;
   padding: 2rem;
+  padding-bottom: 8rem;
   display: grid;
   grid-row-gap: 2rem;
 `
@@ -174,6 +176,7 @@ export default ({ data }) => {
           <Team members={data} />
         </div>
       </Content>
+      <Footer />
     </Layout>
   )
 }
