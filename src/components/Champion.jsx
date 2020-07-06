@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 import { Ribbon } from "./Ribbon"
-import { Confetti } from "./Confetti"
 
 import unicorn from "../images/unicorn.png"
 
@@ -13,7 +12,7 @@ const Picture = styled.div`
   display: flex;
   height: 100%;
   justify-content: center;
-  padding: 2rem;
+  padding: ${props => (props.small ? "1rem" : "2rem")};
   width: 100%;
   z-index: 1;
 
@@ -36,16 +35,16 @@ const ChampionRoot = styled.div`
   justify-content: center;
   padding: 1rem;
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: ${props => (props.small ? "150px" : "250px")};
+  height: ${props => (props.small ? "150px" : "250px")};
 
   ${RibbonWrapper} {
     svg {
       position: absolute;
-      bottom: -4px;
+      bottom: ${props => (props.small ? "-18px" : "-4px")};
       left: 50%;
       transform: translateX(-50%);
-      width: calc(100% + 6rem);
+      width: calc(100% + ${props => (props.small ? "3rem" : "6rem")});
       z-index: 1;
     }
   }
@@ -62,11 +61,10 @@ const ChampionRoot = styled.div`
     }
   }
 `
-export const Champion = () => {
+export const Champion = ({ small }) => {
   return (
-    <ChampionRoot>
-      <Confetti />
-      <Picture>
+    <ChampionRoot small={small}>
+      <Picture small={small}>
         <img src={unicorn} alt="A stuffed unicorn" />
       </Picture>
       <RibbonWrapper>
