@@ -11,7 +11,7 @@ const Root = styled.ul`
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-column-gap: 2rem;
+  grid-column-gap: 3rem;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 2rem;
