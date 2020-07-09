@@ -8,6 +8,7 @@ import { Header } from "../components/Header"
 import { Signature } from "../components/Signature"
 import { Rules } from "../components/Rules"
 import { Team } from "../components/Team"
+import { Sponsors } from "../components/Sponsors"
 
 const Layout = styled.div`
   display: flex;
@@ -161,7 +162,11 @@ export default ({ data }) => {
           <h2>Brought to you</h2>
           <p>
             The Super Grand National World Hacker Bowl Cup Games is brought to
-            you by 5 fearless{" "}
+            you by handsome sponsors:
+          </p>
+          <Sponsors />
+          <p>
+            And five fearless{" "}
             {
               <span
                 dangerouslySetInnerHTML={{
