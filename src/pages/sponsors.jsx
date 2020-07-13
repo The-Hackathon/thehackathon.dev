@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { Layout } from "../components/Layout"
 import { SEO } from "../Seo"
@@ -9,48 +10,43 @@ export default () => {
       <SEO title="Sponsors" />
       <h1>Sponsors</h1>
       <p>
-        Along the way we plan on helping institutions. This is the Internet, the
-        hackers, giving back to the non-virtual world. To enter, you or your
-        team will have to email us proof of a donation to
-        letmein@thehackathon.dev. Any amount will do and you get to choose the
-        institutions. That’s it. No ticket, no participation limit. Just give
-        back to the world and we’ll open the doors to you. We want to get enough
-        people join so that we make an impact with institutions, so please share
-        with your hacker friends. We’re serious. Annoy them as much as you can.
-        We salute you.
+        The Hackathon wouldn't be possible without our sponsors helping us out.
+        <strong>
+          If you are interested in sponsorship, you can reach out at{" "}
+          <Link to="mailto:root@thehackathon.dev">root@thehackathon.dev</Link>.
+        </strong>
       </p>
       <p>
-        Along the way we plan on helping institutions. This is the Internet, the
-        hackers, giving back to the non-virtual world. To enter, you or your
-        team will have to email us proof of a donation to
-        letmein@thehackathon.dev. Any amount will do and you get to choose the
-        institutions. That’s it. No ticket, no participation limit. Just give
-        back to the world and we’ll open the doors to you. We want to get enough
-        people join so that we make an impact with institutions, so please share
-        with your hacker friends. We’re serious. Annoy them as much as you can.
-        We salute you.
+        We're not currently funded by any company and we're committed to
+        remaining so. We're not accepting monetary sponsorships.{" "}
+        <strong>
+          If your company wants to sponsor The Hackathon through monetary means,
+          consider making a donation to a charitable institution instead.
+        </strong>{" "}
+        If you email us a donation proof,{" "}
+        <strong>we'll list your company in the sponsorship section</strong>, in
+        equal terms to existing sponsors.
       </p>
       <p>
-        Along the way we plan on helping institutions. This is the Internet, the
-        hackers, giving back to the non-virtual world. To enter, you or your
-        team will have to email us proof of a donation to
-        letmein@thehackathon.dev. Any amount will do and you get to choose the
-        institutions. That’s it. No ticket, no participation limit. Just give
-        back to the world and we’ll open the doors to you. We want to get enough
-        people join so that we make an impact with institutions, so please share
-        with your hacker friends. We’re serious. Annoy them as much as you can.
-        We salute you.
+        We are also committed to transparency. This is the list of sponsors and
+        how they helped The Hackathon become real.
       </p>
       <p>
-        Along the way we plan on helping institutions. This is the Internet, the
-        hackers, giving back to the non-virtual world. To enter, you or your
-        team will have to email us proof of a donation to
-        letmein@thehackathon.dev. Any amount will do and you get to choose the
-        institutions. That’s it. No ticket, no participation limit. Just give
-        back to the world and we’ll open the doors to you. We want to get enough
-        people join so that we make an impact with institutions, so please share
-        with your hacker friends. We’re serious. Annoy them as much as you can.
-        We salute you.
+        <strong>
+          <Link target="_blank" to="https://subvisual.com">
+            Subvisual
+          </Link>
+        </strong>{" "}
+        - gifted the domain, email and GSuite, provided us paid time off to work
+        on The Hackathon.
+      </p>
+      <p>
+        <strong>
+          <Link target="_blank" to="https://tuple.app">
+            Tuple
+          </Link>
+        </strong>{" "}
+        - gifted three free months of Tuple for the winning team's Hacker Kit.
       </p>
     </Layout>
   )
