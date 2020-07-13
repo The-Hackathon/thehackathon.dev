@@ -25,6 +25,7 @@ export const Footer = () => {
       <Content>
         <Link to="/">Home</Link>
         <Link to="/sponsors">Sponsors</Link>
+        <Link to="/code-of-conduct">Code of Conduct</Link>
       </Content>
     </Root>
   )
