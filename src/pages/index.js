@@ -73,7 +73,13 @@ export default ({ data }) => {
               use the official tagline of Hacker Of The Season™.
             </li>
 
-            <li>A Hacker Kit! We don’t really know what it is yet...</li>
+            <li>
+              A Hacker Kit! It's not finished yet but so far we have a 3-month
+              free access to <Link to="https://tuple.app">Tuple</Link> and
+              6-month subscription to{" "}
+              <Link to="https://gorails.com/">GoRails</Link>. We'll be
+              announcing more prizes soon™.
+            </li>
           </ul>
           <p>
             We’ll be communicating through{" "}
