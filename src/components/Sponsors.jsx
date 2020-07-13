@@ -1,9 +1,10 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import sub from "../images/subvisual.svg"
 import tuple from "../images/tuple.svg"
-import { Link } from "gatsby"
+import goRails from "../images/gorails.svg"
 
 const Root = styled.ul`
   list-style-type: none;
@@ -12,9 +13,10 @@ const Root = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   li {
     margin: 0;
@@ -22,6 +24,10 @@ const Root = styled.ul`
 `
 
 const Subvisual = styled.img`
+  height: 2rem;
+`
+
+const GoRails = styled.img`
   height: 2rem;
 `
 
@@ -40,6 +46,11 @@ export const Sponsors = () => {
       <li>
         <Link target="_blank" to="https://tuple.app">
           <Tuple alt="Tuple" src={tuple} />
+        </Link>
+      </li>
+      <li>
+        <Link target="_blank" to="https://gorails.com/">
+          <GoRails alt="Go Rails" src={goRails} />
         </Link>
       </li>
     </Root>
