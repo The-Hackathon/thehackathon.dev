@@ -1,0 +1,21 @@
+/* TEAM */
+	Organizer #1: Davide Silve
+	Twitter: @DavideSilva_
+
+	Organizer #2: Gabriel Poça
+	Twitter: @gabrielgpoca
+
+	Organizer #3: Fernando Mendes
+	Twitter: @justmnds
+
+	Organizer #4: Miguel Palhas
+	Twitter: @naps62
+
+	Organizer #5: Resende
+	Twitter: @Resende_666
+
+/* SITE */
+	Last update: 2020/07/13
+	Language: English
+	Doctype: HTML5
+	IDE: Vim
