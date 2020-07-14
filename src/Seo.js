@@ -88,7 +88,9 @@ export function SEO({ description, lang, meta, title }) {
           content: image,
         },
       ].concat(meta)}
-    />
+    >
+      <link type="text/plain" rel="author" href="https://thehackathon.dev/humans.txt" />
+    </Helmet>
   )
 }
 
