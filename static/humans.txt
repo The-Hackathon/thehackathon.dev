@@ -1,5 +1,5 @@
 /* TEAM */
-	Organizer #1: Davide Silve
+	Organizer #1: Davide Silva
 	Twitter: @DavideSilva_
 
 	Organizer #2: Gabriel Poça
