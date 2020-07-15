@@ -21,6 +21,10 @@ const Root = styled.ul`
   li {
     margin: 0;
   }
+
+  @media (max-width: 400px) {
+    grid-template-columns: auto;
+  }
 `
 
 const Subvisual = styled.img`
