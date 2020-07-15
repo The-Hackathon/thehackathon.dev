@@ -41,7 +41,7 @@ const ChampionRoot = styled.div`
   ${RibbonWrapper} {
     svg {
       position: absolute;
-      bottom: ${props => (props.small ? "-18px" : "-4px")};
+      bottom: ${props => (props.small ? "-2px" : "-4px")};
       left: 50%;
       transform: translateX(-50%);
       width: calc(100% + ${props => (props.small ? "3rem" : "6rem")});
