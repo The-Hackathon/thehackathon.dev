@@ -49,6 +49,7 @@ export const Footer = () => {
         <Logo src={logo} />
         <Link to="/">Home</Link>
         <Link to="/sponsors">Sponsors</Link>
+        <Link to="/code-of-conduct">Code of Conduct</Link>
         <a href="mailto:root@thehackathon.dev">Contact</a>
         <Row>
           <Link
