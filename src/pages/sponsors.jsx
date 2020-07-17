@@ -48,6 +48,14 @@ export default () => {
         </strong>{" "}
         - gifted three free months of Tuple for the winning team's Hacker Kit.
       </p>
+      <p>
+        <strong>
+          <Link target="_blank" to="https://www.stickermule.com/">
+            Sticker Mule
+          </Link>
+        </strong>{" "}
+        - gifted $20 discount voucher for the winning team's Hacker Kit.
+      </p>
     </Layout>
   )
 }
