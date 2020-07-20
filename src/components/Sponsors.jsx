@@ -5,6 +5,7 @@ import styled from "styled-components"
 import sub from "../images/subvisual.svg"
 import tuple from "../images/tuple.svg"
 import goRails from "../images/gorails.svg"
+import stickerMule from "../images/stickermule.svg"
 
 const Root = styled.ul`
   list-style-type: none;
@@ -28,11 +29,17 @@ const Root = styled.ul`
 `
 
 const Subvisual = styled.img`
-  height: 2rem;
+  height: 2.5rem;
 `
 
 const GoRails = styled.img`
   height: 2rem;
+  margin-bottom: -0.5rem;
+`
+
+const StickerMule = styled.img`
+  height: 8rem;
+  margin: -2.5rem;
 `
 
 const Tuple = styled.img`
@@ -55,6 +62,11 @@ export const Sponsors = () => {
       <li>
         <Link target="_blank" to="https://gorails.com/">
           <GoRails alt="Go Rails" src={goRails} />
+        </Link>
+      </li>
+      <li>
+        <Link target="_blank" to="https://www.stickermule.com/">
+          <StickerMule alt="Sticker Mule" src={stickerMule} />
         </Link>
       </li>
     </Root>
