@@ -42,6 +42,14 @@ export default () => {
       </p>
       <p>
         <strong>
+          <Link target="_blank" to="https://gorails.com/">
+            Go Rails
+          </Link>
+        </strong>{" "}
+        - gifted 6-month subscription for the winning team's Hacker Kit.
+      </p>
+      <p>
+        <strong>
           <Link target="_blank" to="https://tuple.app">
             Tuple
           </Link>
