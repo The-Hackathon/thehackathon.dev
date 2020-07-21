@@ -6,6 +6,7 @@ import sub from "../images/subvisual.svg"
 import tuple from "../images/tuple.svg"
 import goRails from "../images/gorails.svg"
 import stickerMule from "../images/stickermule.svg"
+import hackathonsInternational from "../images/hackathons_international.png"
 
 const Root = styled.ul`
   list-style-type: none;
@@ -42,6 +43,11 @@ const StickerMule = styled.img`
   margin: -2.5rem;
 `
 
+const HackathonsInternational = styled.img`
+  height: 14rem;
+  margin: -5em -0.75em -6em;
+`
+
 const Tuple = styled.img`
   height: 5rem;
 `
@@ -67,6 +73,14 @@ export const Sponsors = () => {
       <li>
         <Link target="_blank" to="https://www.stickermule.com/">
           <StickerMule alt="Sticker Mule" src={stickerMule} />
+        </Link>
+      </li>
+      <li>
+        <Link target="_blank" to="https://www.hackathonsinternational.com/">
+          <HackathonsInternational
+            alt="Hackathons International"
+            src={hackathonsInternational}
+          />
         </Link>
       </li>
     </Root>
