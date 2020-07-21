@@ -64,6 +64,15 @@ export default () => {
         </strong>{" "}
         - gifted $20 discount voucher for the winning team's Hacker Kit.
       </p>
+      <p>
+        <strong>
+          <Link target="_blank" to="https://www.hackathonsinternational.com/">
+            Hackathons International
+          </Link>
+        </strong>{" "}
+        - helped spread the word and gifted their "Hacker Toolkit" for the
+        winning team's Hacker Kit.
+      </p>
     </Layout>
   )
 }
